@@ -1,3 +1,4 @@
+## Searching task
 Algorithm for searching element in randomly generated array and outputing it's index.
 
 **Usage:**
