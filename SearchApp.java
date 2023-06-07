@@ -1,5 +1,6 @@
 package task1;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class SearchApp {
@@ -22,8 +23,10 @@ public class SearchApp {
         String arraySize = scanner.nextLine();
         int SIZE = Integer.parseInt(arraySize);
         int[] array = new int[SIZE];
-        for(int element: array){
-            System.out.print(element+ " ");
+        Random random = new Random();
+        for(int i = 0; i < array.length; i++){
+            array[i] = random.nextInt(200);
+            System.out.print(array[i]+ " ");
         }
         System.out.println();
         System.out.println("Enter element you wanna find: ");
@@ -33,7 +36,7 @@ public class SearchApp {
         if(foundElement == -1){
             System.out.println("Element not found");
         } else {
-            System.out.println("Index of found element");
+            System.out.println("Index of found element "+ foundElement);
         }
     }
 
